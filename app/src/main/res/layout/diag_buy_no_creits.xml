@@ -1,0 +1,15 @@
+    <com.leenita.sindbad.view.TextViewCustomFont
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tvHow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:gravity="left"
+        android:layout_below="@+id/tvNoCredits"
+        android:paddingTop="40dp"
+        android:paddingLeft="30dp"
+        android:textColor="@color/blue2"
+        android:text="@string/diag_buy_how"
+        android:textSize="@dimen/ts_text_normal"
+        app:fontId="1"/>

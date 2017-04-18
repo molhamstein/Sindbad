@@ -1,0 +1,90 @@
+<RelativeLayout
+    android:id="@+id/row_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"
+            />
+
+            <com.leenita.sindbad.view.TextViewCustomFont
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/place_holder"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="80dp"
+                android:layout_toRightOf="@id/ivLogo"
+                android:textColor="@color/txt_of_black"
+                android:textSize="@dimen/ts_text_big"
+                android:textStyle="bold"
+                android:lines="1"
+                app:fontId="2"/>
+
+            <com.leenita.sindbad.view.TextViewCustomFont
+                android:id="@+id/tvType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:gravity="left"
+                android:text="@string/place_holder"
+                android:layout_below="@id/tvName"
+                android:layout_alignLeft="@id/tvName"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/ts_text_normal"
+                android:layout_marginRight="80dp"
+                android:lines="1"
+                app:fontId="1"/>
+
+    <com.wefika.flowlayout.FlowLayout
+        android:id="@+id/vTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_alignParentLeft="true"
+        android:gravity="start|top"/>
+
+    <ImageView
+        android:id="@+id/btnLocation"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_location_blue"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnCall"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_phone_blue"
+        android:layout_marginRight="45dp"
+        android:layout_toLeftOf="@id/btnLocation"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        />
+    <View
+        android:id="@+id/vSep"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_below="@+id/vTags"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/separetor"/>
+
+</RelativeLayout>

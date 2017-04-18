@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_theme">#4bafdf</color>
+    <color name="app_theme2">#8650db</color>
+    <color name="app_theme_dark">#1b75cd</color>
+    <color name="bg">#e3e6eb</color>
+    <color name="bg_dark">#efefef</color>
+
+    <color name="offer_badge">#bd1e2d</color>
+    <color name="product_badge">#434a55</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="app_theme_gallery_bg">#aa000000</color>
+    <color name="app_theme_loading_bg">#443783dd</color>
+    <color name="actionbar_text">#fff</color>
+    <color name="bg_badge">#f64747</color>
+
+    <color name="separetor">#d6d6d6</color>
+    <color name="main_list_header">#eaeaea</color>
+    <color name="actionbar_tab">#f00</color>
+    <color name="drawer_bg">#1f2020</color>
+    <color name="txt_of_white">#ddd</color>
+    <color name="txt_of_black">#212121</color>
+    <color name="txt_gray_xlight">#e0e0e0</color>
+    <color name="txt_gray_light">#757575</color>
+    <color name="txt_gray">#6c6c6c</color>
+    <color name="facebook">#3a5998</color>
+    <color name="twitter">#2daaff</color>
+    <color name="blue1">#6c96f9</color>
+    <color name="blue2">#5298fc</color>
+    <color name="blue3">#4f6bf0</color>
+    <color name="gray_dark">#444444</color>
+    <color name="gray_normal">#777777</color>
+    <color name="gray_light">#aaaaaa</color>
+
+    <!--swipe to refresh-->
+    <color name="swipe_to_refresh_1">#3783dd</color>
+    <color name="swipe_to_refresh_2">#f64747</color>
+
+    <!-- tab View-->
+    <color name="tab_selected_txt">#3782db</color>
+    <color name="tab_normal_txt">#555d68</color>
+
+    <!-- Search filters -->
+    <color name="filter_item_bg_active">#356c96f9</color>
+    <color name="filter_item_bg">#e0e0e0</color>
+
+    <!-- LOGIN -->
+    <color name="com_parse_ui_parse_login_button">#aa6c96f9</color>
+    <color name="com_parse_ui_parse_login_button_push">#306c96f9</color>
+    <color name="com_parse_ui_parse_login_button_focus">#356c96f9</color>
+    <color name="com_parse_ui_parse_login_help_button_label">#5298fc</color>
+    <color name="com_parse_ui_parse_login_help_button_label_push">#5298fc</color>
+    <color name="com_parse_ui_parse_login_help_button_label_focus">#000000</color>
+    <color name="com_parse_ui_parse_login_text_hint">#555555</color>
+    <color name="com_parse_ui_parse_login_display_text">@android:color/white</color>
+    <color name="com_parse_ui_facebook_login_button">#3B5998</color>
+    <color name="com_parse_ui_facebook_login_button_push">#2E4677</color>
+    <color name="com_parse_ui_facebook_login_button_focus">#304F8B</color>
+    <color name="com_parse_ui_twitter_login_button">#2DAAE2</color>
+    <color name="com_parse_ui_twitter_login_button_push">#2588B5</color>
+    <color name="com_parse_ui_twitter_login_button_focus">#2788BE</color>
+
+</resources>

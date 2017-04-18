@@ -1,0 +1,241 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/root_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:collapsedTitleTextAppearance="@style/collapced_titile_appreance"
+                app:contentScrim="@color/app_theme"
+                app:expandedTitleTextAppearance="@style/expandable_title_apperance"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    app:layout_collapseMode="parallax"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <ImageView
+                        android:id="@+id/ivCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/cover_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cover_temp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@id/ivCover"
+                        android:layout_alignTop="@id/ivCover"
+                        android:alpha="0.7"
+                        android:background="@drawable/shape_cover_image_overlay"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/vBasicInfoContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="10dp"
+                        >
+
+                        <com.leenita.sindbad.view.TextViewCustomFont
+                            android:id="@+id/tvProdPrice"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/ivLogo"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:background="@drawable/shape_product_price_badge_flipped"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="@string/place_holder_upvotes"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/ts_text_small"
+                            app:fontId="1"/>
+
+
+                        <ImageView
+                            android:id="@+id/ivLogo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/cover1_temp"
+                            android:transitionName="@string/transition_name_circle"/>
+
+                        <com.leenita.sindbad.view.TextViewCustomFont
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/ivLogo"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@id/tvProdPrice"
+                            android:layout_toRightOf="@id/ivLogo"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="@string/place_holder"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/ts_text_big"
+                            app:fontId="2"/>
+
+                        <com.leenita.sindbad.view.TextViewCustomFont
+                            android:id="@+id/tvBrand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvName"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="-5dp"
+                            android:layout_toLeftOf="@id/tvProdPrice"
+                            android:layout_toRightOf="@id/ivLogo"
+                            android:gravity="left"
+                            android:lines="1"
+                            android:text="@string/place_holder"
+                            android:textColor="@color/white"
+                            android:alpha="0.7"
+                            android:textSize="@dimen/ts_text_small"
+                            app:fontId="1"/>
+
+                        <View
+                            android:id="@+id/vSep"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.9dp"
+                            android:layout_below="@id/ivLogo"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="#4ddd"/>
+
+                        <com.leenita.sindbad.view.TextViewCustomFont
+                            android:id="@+id/tvShortDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/vSep"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/ivCall"
+                            android:layout_marginTop="8dp"
+                            android:gravity="left"
+                            android:layout_alignLeft="@id/ivLogo"
+                            android:lines="2"
+                            android:text="@string/place_holder"
+                            android:ellipsize="end"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/ts_text_xsmall"
+                            app:fontId="1"/>
+
+                        <ImageView
+                            android:id="@+id/ivLocation"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:layout_marginRight="8dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_location_white"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/vSep"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ivCall"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:layout_marginRight="45dp"
+                            android:layout_marginLeft="4dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_call"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/vSep"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="right"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin">
+
+
+                </android.support.v7.widget.Toolbar>
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <com.leenita.sindbad.view.CustomDesignSupportTabBar
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dp"
+                    app:layout_collapseMode="pin"
+                    app:tabIndicatorColor="@color/app_theme"
+                    app:tabSelectedTextColor="@color/tab_selected_txt"
+                    android:background="@drawable/layer_white_with_bottom_shadow"
+                    app:tabTextColor="@color/tab_normal_txt"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <ProgressBar
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+            <include layout="@layout/layout_place_holder_scrolable_pages"/>
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    </FrameLayout>

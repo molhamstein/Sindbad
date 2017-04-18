@@ -1,0 +1,22 @@
+<com.leenita.sindbad.view.TextViewCustomFont
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvTag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_blue_small_corners"
+    android:gravity="center"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:text="@string/place_holder"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:textColor="@color/white"
+    android:textSize="@dimen/ts_text_xsmall"
+    app:fontId="1"
+    />
+
+
+

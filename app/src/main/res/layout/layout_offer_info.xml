@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:padding="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="@string/place_holder"
+        android:textColor="@color/txt_of_black"
+        android:textSize="@dimen/ts_title_small"
+        app:fontId="1" />
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvDescreption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvBrand"
+        android:gravity="left"
+        android:text="@string/place_holder"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/txt_gray"
+        android:textSize="@dimen/ts_text_normal"
+        app:fontId="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/separetor"/>
+
+</LinearLayout>
+
+

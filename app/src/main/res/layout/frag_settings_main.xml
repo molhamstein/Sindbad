@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/vContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg">
+
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_stickyheader"
+            android:text="@string/settings_main_account_title"
+            android:padding="14dp"
+            android:textColor="@color/txt_gray_light"
+            android:textSize="@dimen/ts_text_xsmall"
+            android:gravity="right"
+            app:fontId="1"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnProfileSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/settings_main_account_title"
+            android:paddingRight="14dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="14dp"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/ts_text_small"
+            android:gravity="right"
+            app:fontId="1"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_stickyheader"
+            android:text="@string/settings_main_contact_us_title"
+            android:padding="14dp"
+            android:textColor="@color/txt_gray_light"
+            android:textSize="@dimen/ts_text_xsmall"
+            android:gravity="right"
+            app:fontId="1"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/settings_main_contact_us_get_in_touch"
+            android:paddingRight="14dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="14dp"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/ts_text_small"
+            android:gravity="right"
+            app:fontId="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/separetor"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnFollowUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/settings_main_contact_us_follow_us"
+            android:paddingRight="14dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="14dp"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/ts_text_small"
+            android:gravity="right"
+            app:fontId="1"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_stickyheader"
+            android:text="@string/settings_main_about_title"
+            android:padding="14dp"
+            android:textColor="@color/txt_gray_light"
+            android:textSize="@dimen/ts_text_xsmall"
+            android:gravity="right"
+            app:fontId="1"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnTermsOfService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/settings_main_about_terms_of_service"
+            android:paddingRight="14dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="14dp"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/ts_text_small"
+            android:gravity="right"
+            app:fontId="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/separetor"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/settings_main_about_privacy_policy"
+            android:paddingRight="14dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="14dp"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/ts_text_small"
+            android:gravity="right"
+            app:fontId="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/separetor"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/settings_main_btn_logout"
+            android:paddingRight="14dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="14dp"
+            android:textColor="#f64747"
+            android:textSize="@dimen/ts_text_small"
+            android:gravity="right"
+            app:fontId="1"/>
+
+    </LinearLayout>
+</ScrollView>

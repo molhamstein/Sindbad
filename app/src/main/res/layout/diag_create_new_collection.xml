@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_dialog"
+              android:orientation="vertical">
+
+    <com.leenita.sindbad.view.EditTextCustomFont
+        android:id="@+id/etCollectionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/diag_create_collection_hint"
+        android:textColor="@color/gray_dark"
+        android:textColorHint="@color/txt_gray_light"
+        android:textSize="@dimen/ts_text_xsmall"
+        app:fontId="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="24dp"
+            android:paddingRight="20dp"
+            android:text="@string/diag_create_collection_cancel"
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/ts_text_small"
+            />
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="24dp"
+            android:paddingRight="20dp"
+            android:text="@string/diag_create_collection_ok"
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/ts_text_small"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

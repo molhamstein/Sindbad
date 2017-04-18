@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80.6dp"
+                android:gravity="center_vertical">
+
+
+    <com.leenita.sindbad.view.RoundedImageView
+        android:id="@+id/ivSuggester"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitCenter"
+        android:transitionName="@string/transition_name_circle"
+        app:is_oval="true"
+        android:src="@drawable/shape_transparent"/>
+
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/vUpvotesContainer"
+        android:layout_toRightOf="@id/ivSuggester"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="marquee"
+        android:gravity="right|center_vertical"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="@string/place_holder"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/ts_text_small"
+        app:fontId="1"/>
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvAppDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/vUpvotesContainer"
+        android:layout_toRightOf="@id/ivSuggester"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/tvAppName"
+        android:gravity="right|center_vertical"
+        android:lines="1"
+        android:maxLines="2"
+        android:text="@string/place_holder"
+        android:textColor="@color/txt_gray"
+        android:textSize="@dimen/ts_text_xsmall"
+        app:fontId="1"/>
+
+    <LinearLayout
+        android:id="@+id/vUpvotesContainer"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/ivVoteUp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_voteup_dark"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/tvUpVotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/ivVoteUp"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/place_holder_upvotes"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/ts_text_small"
+            app:fontId="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="70dp"
+        android:background="@color/separetor"/>
+
+</RelativeLayout>
+
+

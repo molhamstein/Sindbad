@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/vCountrylistActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryListActivity">
+<FrameLayout
+    android:id="@+id/customeActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:background="@color/app_theme2">
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical|start"
+        android:src="@drawable/ic_close"/>
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="@string/where_are_you"
+        android:textColor="@color/txt_gray_xlight"
+        android:textSize="@dimen/ts_title_normal"
+        app:fontId="3"/>
+</FrameLayout>
+    <FrameLayout
+        android:id="@+id/vCountryListContainer"
+        android:layout_below="@id/customeActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>

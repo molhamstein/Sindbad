@@ -1,0 +1,253 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/root_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:collapsedTitleTextAppearance="@style/collapced_titile_appreance"
+                app:contentScrim="@color/app_theme"
+                app:expandedTitleMarginBottom="150dp"
+                app:expandedTitleTextAppearance="@style/expandable_title_apperance"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    app:layout_collapseMode="parallax">
+
+                    <ImageView
+                        android:id="@+id/ivCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/cover_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cover_temp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@id/ivCover"
+                        android:layout_alignTop="@id/ivCover"
+                        android:background="@drawable/shape_cover_image_overlay"/>
+
+                    <RelativeLayout
+                        android:id="@+id/vBasicInfoContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@id/ivCover"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="-40dp"
+                        android:background="@drawable/bg_banner_card_with_shadow_padding_small"
+                        android:gravity="center_vertical"
+                        android:padding="7.0dp"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:id="@+id/btnFollowers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <com.leenita.sindbad.view.TextViewCustomFont
+                                android:id="@+id/tvFollowers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/place_holder_followers"
+                                android:textColor="@color/app_theme"
+                                android:textSize="@dimen/ts_text_xsmall"
+                                app:fontId="1"/>
+
+                            <com.leenita.sindbad.view.TextViewCustomFont
+                                android:id="@+id/txtFollowers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_followers"
+                                android:textColor="@color/txt_gray"
+                                android:textSize="@dimen/ts_text_xsmall"
+                                app:fontId="1"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnFollowing"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/btnFollowers"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.leenita.sindbad.view.TextViewCustomFont
+                                android:id="@+id/tvFollowing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/place_holder_followers"
+                                android:textColor="@color/app_theme"
+                                android:textSize="@dimen/ts_text_xsmall"
+                                app:fontId="1"/>
+
+                            <com.leenita.sindbad.view.TextViewCustomFont
+                                android:id="@+id/txtFollowing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/profile_following"
+                                android:textColor="@color/txt_gray"
+                                android:textSize="@dimen/ts_text_xsmall"
+                                app:fontId="1"/>
+
+                        </LinearLayout>
+
+                        <com.leenita.sindbad.view.TextViewCustomFont
+                            android:id="@+id/btnFollow"
+                            android:layout_width="85dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/shape_rounded_follow"
+                            android:gravity="center"
+                            android:text="@string/place_holder"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/ts_text_xsmall"
+                            app:fontId="1"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/vPersonalInfoContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/ivCover"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="-99dp"
+                        android:gravity="center_horizontal">
+
+
+                        <com.leenita.sindbad.view.MLRoundedImageView
+                            android:id="@+id/ivCreator"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/cover1_temp"
+                            android:transitionName="@string/transition_name_circle"/>
+
+                        <com.leenita.sindbad.view.TextViewCustomFont
+                            android:id="@+id/tvDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvCreator"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="-4dp"
+                            android:layout_toLeftOf="@id/ivCreator"
+                            android:alpha="0.5"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="@string/place_holder"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/ts_text_small"
+                            app:fontId="1"/>
+
+                        <com.leenita.sindbad.view.TextViewCustomFont
+                            android:id="@+id/tvCreator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/ivCreator"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="-2dp"
+                            android:layout_toLeftOf="@id/ivCreator"
+                            android:gravity="right"
+                            android:lines="1"
+                            android:text="@string/place_holder"
+                            android:textColor="@color/txt_gray_xlight"
+                            android:textSize="@dimen/ts_text_big"
+                            android:transitionName="@string/transition_name_name"
+                            app:fontId="1"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <com.leenita.sindbad.view.CustomDesignSupportTabBar
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_app_detail_tab_bar_gradient"
+                    app:layout_collapseMode="pin"
+                    app:tabIndicatorColor="@color/app_theme"
+                    app:tabSelectedTextColor="@color/app_theme"
+                    app:tabTextColor="@color/txt_gray"/>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <ProgressBar
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+            <include layout="@layout/layout_place_holder_scrolable_pages"/>
+
+            <com.leenita.sindbad.view.TextViewCustomFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="User Profile, under construction"/>
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</FrameLayout>

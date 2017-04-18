@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/menu_action_profile"
+        android:icon="@drawable/ic_profile"
+        android:orderInCategory="103"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/menu_action_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="102"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_exchange"
+        android:title=""
+        android:icon="@drawable/ic_exchange"
+        android:orderInCategory="101"
+        android:showAsAction="always"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <!--<item-->
+        <!--android:id="@+id/action_filter"-->
+        <!--android:title="@string/menu_action_filters"-->
+        <!--android:icon="@drawable/ic_filter"-->
+        <!--android:orderInCategory="102"-->
+        <!--android:showAsAction="always"-->
+        <!--app:showAsAction="always"/>-->
+</menu>

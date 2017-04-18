@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_check"
+        />
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:layout_toLeftOf="@id/ivCheck"
+        android:layout_alignParentLeft="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/txt_of_black"
+        android:textSize="@dimen/ts_text_small"
+        app:fontId="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/txt_gray_xlight"
+        android:layout_below="@id/tvTitle"/>
+
+</RelativeLayout>

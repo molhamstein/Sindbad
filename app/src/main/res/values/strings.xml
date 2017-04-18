@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">567498840098940</string>
+    <string name="app_name">Sindbad</string>
+
+    <!-- main-->
+    <string name="main_offers_btn">Offers</string>
+    <string name="main_products_btn">Products</string>
+    <string name="main_offers_title">Nearby Offers</string>
+    <string name="main_products_title">Picked for you</string>
+    <string name="main_followed_title">Your follows</string>
+    <string name="main_categories_title">All Categories</string>
+
+    <!--Sindbad login-->
+    <string name="enter_phoen_num_header">قم بتسجيل الدخول للمتابعة</string>
+    <string name="enter_phoen_num_header2">أدخل رقم  هاتفك لتصلك رسالة تأكيد حسابك على هذا الرقم</string>
+    <string name="action_sign_in_register">متابعة</string>
+    <string name="login_progress_signing_in">تسجيل الدخول&#8230;</string>
+    <string name="signup">الإشتراك بالخدمة</string>
+    <string name="local_signup_form_header">قم بتسجيل الدخول عن طريق حسابك على facebook </string>
+    <string name="your_account_safe">لن يتم نشر أي محتوى على صفحتك الشخصية بدون تصريح منك</string>
+    <string name="or">أو</string>
+    <string name="register_manual_account_header">يمكنك تسجيل الدخول عن طريق بريدك الالكتروني</string>
+    <string name="error_field_required">يجب ملئ هذا الحقل</string>
+    <string name="error_signingin">لم تتم عملية تسجيل الدخول ... أعد المحاولة</string>
+    <string name="error_short_phone_num">رقم الهاتف غير صحيح .... الرجاء إدخال الرقم بالصيغة الدولية</string>
+    <string name="error_incorrect_phone_num">رقم الهاتف غير صحيح ....</string>
+    <string name="error_user_name_required">يجب ان يكون الاسم مكون من حرفين على الأقل, حاول إختيار اسم يستطيع أصدقائك التعرف عليه</string>
+    <string name="login_prompt_uesrname">اسم المستخدم</string>
+    <string name="login_prompt_email">البريد الالكتروني</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search for Brands, Products, Offers</string>
+    <string name="search_follow">Follow</string>
+    <string name="search_unfollow">Unfollow</string>
+    <string name="filters_select_all">Select all</string>
+    <string name="filters_group_types">Choose category</string>
+    <string name="filters_ok">Ok</string>
+    <string name="filters_cancel">Cancel</string>
+
+
+    <!-- fav categories -->
+    <string name="fav_categories_header_title">Tell us more About you</string>
+    <string name="fav_categories_header_desc">to help us give you netter suggestions, tell us what are you interested in and we\'ll select the best retailer and offers for you.</string>
+
+    <!-- Offer Details -->
+    <string name="offer_details_section_title_info">"About the Offer/Deal"</string>
+    <string name="offer_details_section_title_media">"Offer/Deal photos"</string>
+    <string name="offer_details_share_msg">"Check out this offer: %%s"</string>
+    <string name="offer_details_share_title">Greate offer</string>
+    <string name="offer_details_share_diag_title">Share with</string>
+    <string name="offer_details_bought">Bought for %s $</string>
+    <string name="offer_details_get_qr">Get QR</string>
+    <string name="offer_details_done">DONE</string>
+
+    <!-- Product Details -->
+    <string name="prod_details_section_title_info">"About Product"</string>
+    <string name="prod_details_section_title_media">"Product Photos"</string>
+    <string name="prod_details_share_msg">"Check out this product: %%s"</string>
+    <string name="prod_details_share_title">Greate product</string>
+    <string name="prod_details_share_diag_title">Share with</string>
+
+    <!-- Dialog buy -->
+    <string name="diag_buy_title">Buy %s</string>
+    <string name="diag_buy_no_credits_offer">You don\'t have enough Leenita credits to buy this offer,\nPlease refill your account with a new card.</string>
+    <string name="diag_buy_no_credits_prod">You don\'t have enough Leenita credits to buy this product,\nPlease refill your account with a new card.</string>
+    <string name="diag_buy_how">HOW TO GET LEENITA CARDS?</string>
+    <string name="diag_buy_accept">ACCEPT</string>
+    <string name="diag_buy_decline">DECLINE</string>
+
+    <!-- brand details-->
+    <string name="brand_details_search_follow">Follow</string>
+
+    <!-- Country-->
+    <string name="where_are_you">"Where are you from?"</string>
+
+
+    <!-- - - - - - - - - - old strings to be cleared - - - - - - - - - -->
+    <!--main-->
+    <string name="menu_action_search">البحث</string>
+    <string name="menu_action_filters">الفلاتر</string>
+    <string name="menu_action_profile">صفحتي</string>
+    <string name="main_tab_title_apps">التطبيقات</string>
+    <string name="main_tab_title_collections">المجموعات</string>
+    <string name="main_tab_title_notifications">أخر النشاطات</string>
+    <string name="main_collection_list_see_more">مشاهدة الكل</string>
+    <string name="main_loading_more">جاري تحميل المزيد</string>
+    <string name="main_loading_no_more_apps_to_load">لا يوجد المزيد من التطبيقات لتحميلها</string>
+    <string name="main_loading_no_more_collections_to_load">لا يوجد المزيد من المجموعات لتحميلها</string>
+    <string name="main_place_holder_check_internet_connection">لا يوجد اتصال، يرجى التأكد من الإعدادات</string>
+    <string name="main_place_holder_no_results">لا يوجد نتائج لعرضها</string>
+
+    <!--filters -->
+    <string name="filters_title">Search Filters</string>
+    <string name="menu_action_done">OK</string>
+
+    <!--Appshare login-->
+    <string name="login_header">أهلاً بك\nالرجاء تسجيل الدخول</string>
+    <string name="login_btn_lable">تسجيل الدخول عن طريق تويتر</string>
+    <string name="login_footer">بتسجيلك الدخول، أنت توافق على</string>
+    <string name="login_footer_and">و</string>
+    <string name="login_footer_privacy">اتفاقية الخصوصية</string>
+    <string name="login_footer_terms">شروط الاستخدام</string>
+
+
+    <!--Searching-->
+    <string name="search_tab_title_apps">التطبيقات</string>
+    <string name="search_tab_title_collections">المجموعات</string>
+    <string name="search_tab_title_people">الأشخاص</string>
+    <string name="search_hint_short">ابحث...</string>
+
+    <!--Suggest-->
+    <string name="suggest_title">اقتراح تطبيق</string>
+    <string name="suggest_link_placeholder">رابط التطبيق</string>
+    <string name="suggest_btn_send">ارسال</string>
+    <string name="suggest_sub_title">انسخ رابط التطبيق على المتجر هنا</string>
+    <string name="suggest_malformed_url">يرجى إدخال رابط صحيح للتطبيق المقترح</string>
+    <string name="suggest_submit_success_msg">لقد تم إرسال التطبيق المقترح للمراجعة، وسيتم إعلامك في حال الموافقة عليه</string>
+
+    <!--app details-->
+    <string name="app_details_section_title_comments">التعليقات</string>
+    <string name="app_details_section_title_similar">ذات صلة</string>
+    <string name="app_details_section_title_media">الصور</string>
+    <string name="app_details_section_title_upvoters">المعجبون</string>
+    <string name="app_details_btn_get_app">تحميل التطبيق</string>
+    <string name="app_details_btn_login_to_comment">قم بتسجيل الدخول لتتمكن من اضافة تعليق</string>
+    <string name="app_details_add_comment_hint">عبر عن رأيك بالتطبيق</string>
+    <string name="app_details_comments_place_holder_no_results">كن أول المعلقين وشاركنا تجربتك مع التطبيق</string>
+    <string name="app_details_similar_place_holder_no_results">لا تتوافر أي تطبيقات مشابهة حاليا</string>
+    <string name="app_details_media_place_holder_no_results">لا تتوافر أي صور أو فيديوهات عن هذا التطبيق حاليا</string>
+    <string name="app_details_upvoters_place_holder_no_results">كن أول المعجبين بهذا التطبيق</string>
+    <string name="app_details_bookmark_create_new_collection">إنشاء مجموعة جديدة</string>
+    <string name="app_details_bookmark_no_collections">ليس لديك مجموعات تطبيقات بعد</string>
+
+    <!-- latest activity -->
+    <string name="latest_activity_event_title_new_follower" >لديك متابع جديد</string>
+    <string name="latest_activity_event_desc_new_follower">لقد بدأ %%s بمتابعتك على أبشر</string>
+    <string name="latest_activity_event_title_new_comment">تعليق جديد</string>
+    <string name="latest_activity_event_desc_new_comment">لقد قام %%s باضافة تعليق جديد على تطبيق %%s</string>
+    <string name="latest_activity_event_title_followed_user_upvoted_an_app">تطبيق مثير للاهتمام</string>
+    <string name="latest_activity_event_desc_followed_user_upvoted_an_app">لقد أعجب %%s بتطبيق جديد</string>
+
+    <!--Settings-->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_main_account_title">إعدادات الحساب الشخصي</string>
+    <string name="settings_main_contact_us_title">تواصل معنا</string>
+    <string name="settings_main_about_title">عن التطبيق</string>
+    <string name="settings_main_account">المعلومات الشخصية والتنبيهات</string>
+    <string name="settings_main_contact_us_get_in_touch">للتواصل مع فريق الدعم الفني</string>
+    <string name="settings_main_contact_us_follow_us">تابعنا على تويتر</string>\
+    <string name="settings_main_about_terms_of_service">شروط الاستخدام</string>
+    <string name="settings_main_about_privacy_policy">اتفاقية الخصوصية</string>
+    <string name="settings_profile_profile_subtitle">المعلومات الشخصية</string>
+    <string name="settings_profile_notifications_subtitle">التنبيهات</string>
+    <string name="settings_profile_email_hint">البريد الإلكتروني</string>
+    <string name="settings_profile_job_hint">المهنة</string>
+    <string name="settings_profile_notifications_mentions">أعلمني عند الأشارة الي في التعليقات</string>
+    <string name="settings_profile_notifications_new_apps">أعلمني عندما يضيف أحد الذين أتابعهم تطبيقاً</string>
+    <string name="settings_profile_notifications_upvotes">أعلمني عندما يقوم أحدالذين أتابعهم بالتصويت</string>
+    <string name="settings_terms_of_service">شروط الاستخدام شروط الاستخدام شروط الاستخدام شروط الاستخدام شروط الاستخدام، شروط الاستخدام</string>
+    <string name="settings_privacy_policy">تفاقية الخصوصية تفاقية الخصوصية تفاقية الخصوصية تفاقية الخصوصية</string>
+    <string name="settings_main_btn_logout">تسجيل الخروج</string>
+
+    <!-- Titles -->
+    <string name="title_filters">الفلترة</string>
+
+    <!--Generic-->
+    <string name="of">من</string>
+    <string name="loading">جاري التحميل</string>
+    <string name="follow">متابعة</string>
+    <string name="unfollow">إلغاء المتابعة</string>
+
+    <!-- create collection-->
+    <string name="diag_create_collection_hint">أدخل اسم المجموعة الجديدة</string>
+    <string name="diag_create_collection_ok">انشاء</string>
+    <string name="diag_create_collection_cancel">إلغاء الأمر</string>
+    <string name="diag_create_collection_err_empty_name">لا يمكن أن يكون اسم المجموعة خاليا</string>
+
+    <!-- profile -->
+    <string name="profile_followers">متابِعون</string>
+    <string name="profile_following">متابَعون</string>
+    <string name="profile_follow">مُتابَعة</string>
+    <string name="profile_unfollow">إلغاء المتابعة</string>
+    <string name="profile_upvoted">المفضلة</string>
+    <string name="profile_collections">المجموعات</string>
+    <string name="profile_suggestions">المشاركات</string>
+    <string name="profile_my_page">صفحتي</string>
+
+    <!--Date -->
+    <string name="DATE_FORMATE_TODAY">اليوم</string>
+    <string name="DATE_FORMATE_YESTERDAY">البارحة</string>
+    <string name="DATE_fiew_minutes_ago">منذ بضع دقائق</string>
+
+    <!-- loading -->
+    <string name="loading_loading">جاري التحميل...</string>
+
+    <!--Errors-->
+    <string name="err_check_connection">الرجاء التأكد من الإتصال بالإنترنت</string>
+    <string name="err_login_failed" >فشل تسجيل الدحول الرجاء التأكد من الإتصال بالإنترنت</string>
+    <string name="err_operation_failed">لايمكن الإتمام الآن الرجاء المحاولة لاحقاً</string>
+    <string name="err_fb_not_installed">للأسف لم يتم ايجاد تطبيق الفيسبوك</string>
+    <string name="err_sharing_failed">للأسف فشلت عملية</string>
+
+    <!-- Share -->
+    <string name="share_app_diag_title">مشاركة التطبيق على؟</string>
+    <string name="share_collection_diag_title">مشاركة المجموعة على</string>
+    <string name="share_app_title">تطبيق رائع</string>
+    <string name="share_app_msg">عليك بتفقد هذا التطبيق، قم بتفقد التطبيق على موقع أبشر %%s</string>
+    <string name="share_collection_title">تطبيقات رائعة</string>
+    <string name="share_collection_msg">مجموعة تطبيقات رائعة، قم بتفقدها على موقع أبشر %%s</string>
+
+    <!--Const-->
+    <string name="transition_name_name">transition:NAME</string>
+    <string name="transition_name_circle">transition:CIRCLE</string>
+    <string name="place_holder">---</string>
+    <string name="place_holder_upvotes">0000</string>
+    <string name="place_holder_followers">00</string>
+    <string name="title_activity_map">Map</string>
+
+</resources>

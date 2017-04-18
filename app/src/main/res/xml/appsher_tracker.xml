@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  App property id. -->
+    <string name="ga_trackingId">UA-51520288-5</string>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- The screen names that will appear in reports -->
+    <string name="com.leenita.sindbad.BaseDetailsActivity">App Details</string>
+    <string name="com.leenita.sindbad.HomeActivity">Home</string>
+    <string name="com.leenita.sindbad.LoginActivity">Login</string>
+    <string name="com.leenita.sindbad.ProfileActivity">Profile</string>
+    <string name="com.leenita.sindbad.SearchActivity">Search</string>
+    <string name="com.leenita.sindbad.SettingsActivity">Settings</string>
+    <string name="com.leenita.sindbad.ChooseFavCategoriesActivity">Filter</string>
+    <string name="com.leenita.sindbad.SplashScreen">SplashScreen</string>
+    <string name="com.leenita.sindbad.SplashScreen">SuggestActivity</string>
+
+    <!-- Timeout after stopping till new session start -->
+    <integer name="ga_sessionTimeout">600</integer>
+
+</resources>

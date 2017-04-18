@@ -1,0 +1,36 @@
+<FrameLayout android:id="@+id/vCard"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/selector_card_extruded_bg">
+
+    <com.leenita.sindbad.view.RoundedImageView
+        android:id="@+id/ivCategory"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:corner_radius="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_rounded_overlay"/>
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="@string/place_holder"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_text_small"
+        app:fontId="1"/>
+
+</FrameLayout>
+
+

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_splash"/>
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/login_header"
+        android:textColor="@color/txt_of_black"
+        android:textSize="@dimen/ts_text_normal"
+        app:fontId="1"/>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_login_btn"
+        android:drawableLeft="@drawable/ic_twitter"
+        android:drawablePadding="10dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="18dp"
+        android:text="@string/login_btn_lable"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/ts_text_normal"/>
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="@string/login_footer"
+        android:textColor="@color/txt_of_black"
+        android:textSize="@dimen/ts_text_xxsmall"
+        app:fontId="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnTermsOfService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/login_footer_terms"
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/ts_text_xxsmall"
+            app:fontId="1"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/login_footer_and"
+            android:textColor="@color/txt_of_black"
+            android:textSize="@dimen/ts_text_xxsmall"
+            app:fontId="1"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/btnPrivacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/login_footer_privacy"
+            android:textColor="@color/app_theme"
+            android:textSize="@dimen/ts_text_xxsmall"
+            app:fontId="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

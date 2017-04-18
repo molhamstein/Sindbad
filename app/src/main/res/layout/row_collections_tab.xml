@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/collection_card_height"
+    android:background="@drawable/bg_card_with_shadow"
+    android:padding="13.3dp"
+    android:layout_margin="6dp"
+    android:gravity="center_vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.leenita.sindbad.view.fullWidthImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:scaleType="fitXY"
+        app:corner_radius="2dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/white"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+
+        <com.leenita.sindbad.view.RoundedImageView
+            android:id="@+id/ivSuggester"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-22dp"
+            android:layout_alignParentLeft="true"
+            android:transitionName="@string/transition_name_circle"
+            android:scaleType="fitCenter"
+            app:is_oval="true"
+            android:src="@drawable/ic_profile"/>
+
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/tvCollectionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/ivSuggester"
+            android:layout_marginTop="-4dp"
+            android:gravity="right|center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/place_holder"
+            android:textColor="@color/txt_of_black"
+            android:textSize="@dimen/ts_text_normal"
+            app:fontId="1"/>
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:id="@+id/tvCollectionDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="1dp"
+            android:layout_below="@id/tvCollectionName"
+            android:gravity="right|center_vertical"
+            android:maxLines="2"
+            android:text="@string/place_holder"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/ts_text_small"
+            app:fontId="1"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+

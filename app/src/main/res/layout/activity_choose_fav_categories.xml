@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/gradient_home_toolbar"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/app_theme2">
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_title_xbig"
+            android:text="@string/fav_categories_header_title"
+            app:fontId="1"
+            />
+
+        <com.leenita.sindbad.view.TextViewCustomFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/txt_of_white"
+            android:textSize="@dimen/ts_text_normal"
+            android:text="@string/fav_categories_header_desc"
+            app:fontId="1"
+            />
+
+    </LinearLayout>
+
+    <com.leenita.sindbad.view.AppAnimatedGrid
+        android:id="@+id/rvGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/anim_grid_layout_anim"
+        android:background="#cc8650db"/>
+
+
+</LinearLayout>

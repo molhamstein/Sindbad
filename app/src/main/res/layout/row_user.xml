@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80.6dp"
+                android:gravity="center_vertical">
+
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/btnFollow"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_rounded_follow"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/ts_text_xsmall"
+        android:text="@string/place_holder"
+        app:fontId="1"/>
+
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ivUser"
+        android:layout_toRightOf="@id/btnFollow"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="marquee"
+        android:gravity="right|center_vertical"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="@string/place_holder"
+        android:transitionName="@string/transition_name_name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/ts_text_small"
+        app:fontId="1"/>
+
+    <com.leenita.sindbad.view.TextViewCustomFont
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/ivUser"
+        android:layout_toRightOf="@id/btnFollow"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/tvName"
+        android:gravity="right|center_vertical"
+        android:lines="1"
+        android:maxLines="2"
+        android:text="@string/place_holder"
+        android:textColor="@color/txt_gray"
+        android:textSize="@dimen/ts_text_xsmall"
+        app:fontId="1"/>
+
+
+    <com.leenita.sindbad.view.MLRoundedImageView
+        android:id="@+id/ivUser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:transitionName="@string/transition_name_circle"
+        android:src="@drawable/ic_voteup_dark"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="70dp"
+        android:background="@color/separetor"/>
+
+</RelativeLayout>
+
+

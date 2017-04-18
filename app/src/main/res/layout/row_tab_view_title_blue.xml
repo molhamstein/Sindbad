@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.leenita.sindbad.view.TextViewCustomFont
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:gravity="center"
+    android:singleLine="true"
+    android:text="@string/place_holder"
+    android:textColor="@drawable/selector_tab_stripe_item_blue_gray"
+    android:textSize="@dimen/ts_text_small"
+    app:fontId="2"/>
